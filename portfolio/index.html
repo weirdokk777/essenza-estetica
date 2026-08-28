@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Kevin Santos, desenvolvedor de aplicativos e criador de soluções digitais." />
+  <meta name="keywords" content="desenvolvedor, aplicativos, soluções digitais, portfólio, Flutter, React Native, React, Node.js" />
+  <meta name="author" content="Kevin Santos" />
+  <meta name="theme-color" content="#0a0e1a" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kevin Santos — Desenvolvedor de Aplicativos & Soluções Digitais" />
+  <meta property="og:description" content="Portfólio de Kevin Santos, desenvolvedor de aplicativos e criador de soluções digitais." />
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta property="og:url" content="https://seu-dominio.com" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kevin Santos — Desenvolvedor de Aplicativos & Soluções Digitais" />
+  <meta name="twitter:description" content="Portfólio de Kevin Santos, desenvolvedor de aplicativos e criador de soluções digitais." />
+
+  <title>Kevin Santos — Desenvolvedor de Aplicativos & Soluções Digitais</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0e1a'/%3E%3Ctext x='50' y='68' font-size='50' font-family='Arial' font-weight='bold' fill='%236366f1' text-anchor='middle'%3EKS%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#inicio" class="navbar-logo" aria-label="Kevin Santos - Início">
+        <span class="logo-mark">KS</span>
+        <span class="logo-text">Kevin Santos</span>
+      </a>
+
+      <nav class="navbar-menu" id="navbarMenu" aria-label="Navegação principal">
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-link">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li><a href="#tecnologias" class="nav-link">Tecnologias</a></li>
+          <li><a href="#processo" class="nav-link">Processo</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+        <a href="#contato" class="btn btn-primary btn-navbar">Vamos conversar</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="navbarMenu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+        <div class="hero-particles" id="heroParticles"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="hero-badge reveal">
+            <span class="badge-dot"></span>
+            Disponível para novos projetos
+          </span>
+
+          <h1 class="hero-title reveal">
+            Olá, eu sou <span class="gradient-text" id="heroName">Kevin Santos</span>
+          </h1>
+
+          <h2 class="hero-role reveal" id="heroRole">
+            Desenvolvedor de Aplicativos & Criador de Soluções Digitais
+          </h2>
+
+          <p class="hero-description reveal" id="heroDescription">
+            Transformo ideias em aplicativos e soluções digitais com foco em experiência do usuário, inovação e design.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a href="#projetos" class="btn btn-primary">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="7" height="7" rx="1.5"></rect>
+                <rect x="14" y="3" width="7" height="7" rx="1.5"></rect>
+                <rect x="3" y="14" width="7" height="7" rx="1.5"></rect>
+                <rect x="14" y="14" width="7" height="7" rx="1.5"></rect>
+              </svg>
+              Ver meus projetos
+            </a>
+            <a href="#contato" class="btn btn-outline">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 2L11 13"></path>
+                <path d="M22 2l-7 20-4-9-9-4 20-7z"></path>
+              </svg>
+              Entrar em contato
+            </a>
+          </div>
+
+          <div class="hero-social reveal" id="heroSocial">
+            <!-- Social links injected via JS -->
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="code-window">
+            <div class="code-window-header">
+              <span class="window-dot red"></span>
+              <span class="window-dot yellow"></span>
+              <span class="window-dot green"></span>
+              <span class="window-title">app.dart</span>
+            </div>
+            <div class="code-window-body">
+              <pre><code><span class="code-keyword">class</span> <span class="code-class">Developer</span> {
+  <span class="code-keyword">final</span> <span class="code-type">String</span> name = <span class="code-string">"Kevin Santos"</span>;
+  <span class="code-keyword">final</span> <span class="code-type">List</span><<span class="code-type">String</span>> skills = [
+    <span class="code-string">"Flutter"</span>,
+    <span class="code-string">"React Native"</span>,
+    <span class="code-string">"Node.js"</span>,
+    <span class="code-string">"UI/UX"</span>
+  ];
+
+  <span class="code-type">App</span> build() {
+    <span class="code-keyword">return</span> <span class="code-type">App</span>(
+      idea: <span class="code-string">"transform ideas"</span>,
+      design: <span class="code-string">"premium"</span>,
+      code: <span class="code-string">"clean & scalable"</span>,
+      delivery: <span class="code-string">"on time"</span>,
+    );
+  }
+}</code></pre>
+            </div>
+          </div>
+
+          <div class="floating-card floating-card-1">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </svg>
+            <span>Performance</span>
+          </div>
+
+          <div class="floating-card floating-card-2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path d="M2 17l10 5 10-5"></path>
+              <path d="M2 12l10 5 10-5"></path>
+            </svg>
+            <span>Inovação</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#sobre" class="scroll-indicator" aria-label="Rolar para a seção Sobre">
+        <span class="scroll-mouse">
+          <span class="scroll-wheel"></span>
+        </span>
+      </a>
+    </section>
+
+    <!-- ===== SOBRE MIM ===== -->
+    <section class="section about" id="sobre">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Sobre mim</span>
+          <h2 class="section-title">Conheça minha <span class="gradient-text">trajetória</span></h2>
+          <p class="section-subtitle">Um pouco sobre quem sou e o que faço.</p>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text reveal">
+            <p class="about-paragraph" id="aboutText">
+              Sou apaixonado por tecnologia e criação de soluções digitais. Desenvolvo aplicativos e projetos digitais com foco em experiência do usuário, inovação, funcionalidade e design.
+            </p>
+            <p class="about-paragraph" id="aboutExtra">
+              Trabalho de forma organizada e colaborativa, unindo criatividade e técnica para entregar produtos digitais que realmente fazem a diferença. Estou sempre em busca de novos desafios e oportunidades de crescimento.
+            </p>
+
+            <div class="about-stats" id="aboutStats">
+              <!-- Stats injected via JS -->
+            </div>
+          </div>
+
+          <div class="about-cards" id="aboutCards">
+            <!-- About cards injected via JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJETOS ===== -->
+    <section class="section projects" id="projetos">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Portfólio</span>
+          <h2 class="section-title">Meus <span class="gradient-text">projetos</span></h2>
+          <p class="section-subtitle">Aplicativos e soluções digitais que desenvolvi.</p>
+        </div>
+
+        <div class="project-filters reveal" id="projectFilters" role="tablist" aria-label="Filtrar projetos por categoria">
+          <!-- Filters injected via JS -->
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Projects injected via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TECNOLOGIAS ===== -->
+    <section class="section technologies" id="tecnologias">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Stack</span>
+          <h2 class="section-title">Tecnologias & <span class="gradient-text">ferramentas</span></h2>
+          <p class="section-subtitle">As principais tecnologias que utilizo nos meus projetos.</p>
+        </div>
+
+        <div class="tech-grid" id="techGrid">
+          <!-- Technologies injected via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESSO ===== -->
+    <section class="section process" id="processo">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Como trabalho</span>
+          <h2 class="section-title">Meu processo de <span class="gradient-text">desenvolvimento</span></h2>
+          <p class="section-subtitle">Um método organizado para transformar ideias em produtos reais.</p>
+        </div>
+
+        <div class="process-grid" id="processGrid">
+          <!-- Process steps injected via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NETWORKING ===== -->
+    <section class="section networking" id="networking">
+      <div class="container">
+        <div class="networking-card reveal">
+          <div class="networking-glow" aria-hidden="true"></div>
+          <h2 class="networking-title">Vamos criar algo <span class="gradient-text">juntos?</span></h2>
+          <p class="networking-text">
+            Estou aberto a novos projetos, oportunidades, parcerias e conexões com pessoas que também acreditam no potencial da tecnologia para transformar ideias em soluções.
+          </p>
+          <a href="#contato" class="btn btn-primary btn-large">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 2L11 13"></path>
+              <path d="M22 2l-7 20-4-9-9-4 20-7z"></path>
+            </svg>
+            Entrar em contato
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== REDES SOCIAIS ===== -->
+    <section class="section social" id="redes">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Redes sociais</span>
+          <h2 class="section-title">Conecte-se <span class="gradient-text">comigo</span></h2>
+          <p class="section-subtitle">Acompanhe meu trabalho e vamos conversar.</p>
+        </div>
+
+        <div class="social-grid" id="socialGrid">
+          <!-- Social links injected via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section class="section contact" id="contato">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Contato</span>
+          <h2 class="section-title">Vamos <span class="gradient-text">conversar</span></h2>
+          <p class="section-subtitle">Tem um projeto em mente? Envie uma mensagem.</p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info reveal">
+            <h3 class="contact-info-title">Informações de contato</h3>
+            <p class="contact-info-text">Prefere falar diretamente? Escolha uma das opções abaixo.</p>
+
+            <div class="contact-methods" id="contactMethods">
+              <!-- Contact methods injected via JS -->
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Nome <span class="required">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Seu nome completo" required autocomplete="name" />
+              <span class="error-message" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail <span class="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" required autocomplete="email" />
+              <span class="error-message" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="company">Empresa <span class="optional">(opcional)</span></label>
+              <input type="text" id="company" name="company" placeholder="Nome da empresa" autocomplete="organization" />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Assunto <span class="required">*</span></label>
+              <input type="text" id="subject" name="subject" placeholder="Assunto da mensagem" required />
+              <span class="error-message" id="subjectError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensagem <span class="required">*</span></label>
+              <textarea id="message" name="message" rows="5" placeholder="Conte-me sobre seu projeto..." required></textarea>
+              <span class="error-message" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span class="btn-text">Enviar mensagem</span>
+              <span class="btn-loading" aria-hidden="true">
+                <span class="spinner"></span>
+                Enviando...
+              </span>
+            </button>
+
+            <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#inicio" class="navbar-logo" aria-label="Kevin Santos - Início">
+            <span class="logo-mark">KS</span>
+            <span class="logo-text">Kevin Santos</span>
+          </a>
+          <p class="footer-description">
+            Desenvolvedor de aplicativos e criador de soluções digitais. Transformando ideias em produtos reais.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-title">Navegação</h4>
+          <ul class="footer-links" id="footerLinks">
+            <!-- Footer links injected via JS -->
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h4 class="footer-title">Redes sociais</h4>
+          <div class="footer-social-icons" id="footerSocial">
+            <!-- Social icons injected via JS -->
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; <span id="currentYear">2026</span> Kevin Santos. Todos os direitos reservados.
+        </p>
+        <p class="footer-made">Feito com <span class="heart" aria-hidden="true">&hearts;</span> tecnologia e criatividade.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 19V5"></path>
+      <path d="M5 12l7-7 7 7"></path>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

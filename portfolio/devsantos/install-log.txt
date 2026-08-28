@@ -1,0 +1,4 @@
+Iniciando instalacao...
+node_modules JA EXISTE
+RESULTADO: node_modules criado com sucesso
+Script concluido
